@@ -15,7 +15,7 @@ namespace otw.template.efcore.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL(_configuration.GetConnectionString("DefaultConnection"));
+            optionsBuilder.UseMySQL("Server=162.144.176.146;Database=beatyou4_beatyou4_otw_clubs_mgt_members_dev;uid=beatyou4_clubsmgt_dev;password=bu[7jCi-JgCK");
         }
 
         public DbSet<Person> Person { get; set; }
